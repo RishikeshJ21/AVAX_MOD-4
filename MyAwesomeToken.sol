@@ -9,7 +9,7 @@ contract MyAwesomeToken is ERC20, Ownable {
 
     string[] public tierNames = ["Nebula Elite", "Quantum Vanguard", "Celestial Phoenix", "Galactic Voyager"];
 
-    constructor() ERC20("Awesome_Token", "AWT") Ownable(msg.sender) {}
+    constructor() ERC20("Degen", "DGN") Ownable(msg.sender) {}
 
     function mintTokens(address to, uint256 amount) public onlyOwner {
         _mint(to, amount);
